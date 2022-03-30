@@ -1,0 +1,23 @@
+{
+  "name": "@risecorejs/include-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risecorejs/include-builder.git"
+  },
+  "author": "Amenov Abdulsalam <risecorejs@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/risecorejs/include-builder/issues"
+  },
+  "homepage": "https://github.com/risecorejs/include-builder#readme",
+  "dependencies": {
+    "flat": "^5.0.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
