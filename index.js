@@ -13,6 +13,13 @@ module.exports = (queryInclude, aliases, defaultInclude = []) => {
 
   queryInclude = queryInclude ? [...new Set(queryInclude.concat(defaultInclude))] : defaultInclude
 
+  queryInclude.sort((a, b) => {
+    if (a < b) return -1
+    if (a > b) return 1
+
+    return 0
+  })
+
   for (const key of queryInclude) {
     flatQueryInclude[key] = {}
   }
