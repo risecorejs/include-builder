@@ -10,7 +10,7 @@ const lodash_1 = __importDefault(require("lodash"));
  * @param queryIncludes {TQueryIncludes}
  * @param includes {object}
  * @param defaultIncludes {string[]?}
- * @return {any[]}
+ * @return {(string | object)[]}
  */
 function default_1(queryIncludes, includes, defaultIncludes) {
     defaultIncludes ||= [];
