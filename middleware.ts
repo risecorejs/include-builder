@@ -17,3 +17,11 @@ export default function (): express.Handler {
     next()
   }
 }
+
+declare global {
+  namespace Express {
+    interface Request {
+      includeBuilder(includes: object, defaultIncludes: string[]): any[]
+    }
+  }
+}
