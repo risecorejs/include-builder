@@ -4,7 +4,7 @@ import { TQueryIncludes } from './types';
 /**
  * INCLUDE-BUILDER
  * @param queryIncludes {TQueryIncludes}
- * @param includes {object}
+ * @param includes {IFields}
  * @param defaultIncludes {string[]?}
  * @return {(string | object)[]}
  */
