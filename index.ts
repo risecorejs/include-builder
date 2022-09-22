@@ -1,6 +1,8 @@
 import flat from 'flat'
 import _ from 'lodash'
 
+import { Includeable } from 'sequelize'
+
 import { IFields } from './interfaces'
 import { TQueryIncludes } from './types'
 
@@ -11,11 +13,7 @@ import { TQueryIncludes } from './types'
  * @param defaultIncludes {string[]?}
  * @return {(string | object)[]}
  */
-export default function (
-  queryIncludes: TQueryIncludes,
-  includes: IFields,
-  defaultIncludes?: string[]
-): (string | object)[] {
+export default function (queryIncludes: TQueryIncludes, includes: IFields, defaultIncludes?: string[]): Includeable[] {
   defaultIncludes ||= []
 
   const includeList: string[] = []
